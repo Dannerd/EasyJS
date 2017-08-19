@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="../EasyJS/js/easy.js"></script>
+</head>
+<body>
+
+
+<script>
+
+    const canv = new Canvas("cuboid-test",500);
+
+    const c = new Cuboid(200,6);
+    c.setColor(new Color(255, 0, 0, 100));
+    c.setStroke(new Color(255, 0, 0, 100));
+
+    c.transform.rotateX(Math.PI * 1 / 128);
+
+    canv.add(c, canv.width/2, canv.height/2);
+
+
+
+
+</script>
+</body>
+</html>
